@@ -14,7 +14,7 @@ const buySellA = [{name: 'Buy', value :'Buy'},{name: 'Sell', value :'Sell'}];
 const optsArr = [{name: 'call', value :'call Options'},{name: 'put', value :'put options'}];
 const assetArr = [{name: 'tcad', value :'TCAD'}];
 
-const HomePage = (security) => (
+const HomePage = (security, saving = false) => (
   <div >
     <h1><Trans i18nKey="title_etf" /></h1>
     <h2><Trans i18nKey="promoting" /></h2>
@@ -76,6 +76,9 @@ const HomePage = (security) => (
         onChange={security}
       />
     {/*</p>*/}
+      <button type="submit" enabled={saving} className="btn btn-primary">
+        {saving ? "Submit" : "Submitting..." }
+      </button>
     </form>
   </div>
 );

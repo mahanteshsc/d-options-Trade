@@ -7,6 +7,8 @@ import HomePage from "./home/HomePage";
 import AboutPage from "./about/AboutPage";
 import IssuesPage from "./issue/IssuesPage";
 import TradePage from "./trade/TradePage";
+import MintPage from "./home/MintPage"
+
 import { translate, Trans } from "react-i18next";
 // import MetaMaskLoginButton from 'react-metamask-login-button';
 
@@ -16,7 +18,8 @@ function App() {
           {/*<MetaMaskLoginButton />*/}
           <Header />
         <Switch>
-        <Route exact path="/" component={HomePage} />
+        <Route exact path="/" component={MintPage} />
+         <Route path="/home" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/issues" component={IssuesPage} />
         <Route path="/trade" component={TradePage} />

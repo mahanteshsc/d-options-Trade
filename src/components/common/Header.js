@@ -24,6 +24,10 @@ const Header = () => {
         <Trans i18nKey="dashboard" />
       </NavLink>
       {" | "}
+      <NavLink to="/mint" activeStyle={activeStyle} exact>
+        <Trans i18nKey="Mint" />
+      </NavLink>
+      {" | "}
       <NavLink to="/issues" activeStyle={activeStyle}>
         <Trans i18nKey="buy_tcad" />
       </NavLink>

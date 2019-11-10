@@ -3,6 +3,7 @@ let fr = {
     welcomeMsg: "welcome",
     Home: "Home_FR",
     Issues: "Issues_FR",
+    Mint: "Battre monnaie",
     Trade: "Trade_FR",
     About: "About_FR",
     // and: "and_FR",

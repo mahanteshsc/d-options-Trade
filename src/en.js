@@ -3,7 +3,7 @@ let en = {
     welcomeMsg: "welcome",
     Home: "Home",
     Issues: "Issues",
-    Trade: "Trade",
+    Mint: "Mint coins",
     About: "About",
     // and: "and",
     title_etf: "Sustainable Futures Exch-eh-nge",
