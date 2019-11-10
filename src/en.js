@@ -19,6 +19,9 @@ let en = {
     expiring: 'expiring on',
     promoting: "Promoting responsible investing in Canada",
     buy_tcad: "Purchase TCAD",
+  purchase_1: "1. Enter your wallet address.",
+  purchase_2: "2. Wire funds from your bank account, using the wiring instructions provided.",
+  purchase_3: "3. TrueCAD will be sent to your wallet address.",
     about_us: 'About Us',
     responsible_investing: 'Value-driven investing',
     summary_1: "ESG, or the incorporation of environmental, social and governance risk factors, is increasingly becoming a core part of any investment strategy.",
@@ -31,9 +34,10 @@ let en = {
     derivatives: "Blockchain-based synthetic derivatives",
     powered_by: "Powered by",
     redeem: 'Redeem TCAD',
-    redeem_fiat: "Redeem TCAD tokens for Canadian dollars",
-    bank_account: "You can redeem these tokens for fiat by transfering them to your redemption address, which starts with at least thirty-five zeroes.",
-    and: 'and',
+  redeem_1: "1. Add the bank account where you wish to receive funds.",
+  redeem_2: "2. Send TrueUSD to your redemption address (which starts with at least thirty-five zeroes), using the instructions provided.",
+  redeem_3: "3. CAD will be deposited to your bank account.",
+  and: 'and',
     nested: {
       startMsg: "just start stuff"
     }

@@ -16,10 +16,23 @@ class TradePage extends React.Component {
     return (
       <div>
        <h1><Trans i18nKey="redeem" /></h1>
-        <h2><Trans i18nKey="redeem_fiat" /></h2>
+        {/*<h2><Trans i18nKey="redeem_fiat" /></h2>*/}
+        {/*<p>*/}
+          {/*<Trans i18nKey="bank_account" />*/}
+        {/*</p>*/}
+
         <p>
-          <Trans i18nKey="bank_account" />
+          <Trans i18nKey="redeem_1" />
         </p>
+        <p>
+          <Trans i18nKey="redeem_2" />
+        </p>
+        <p>
+          <Trans i18nKey="redeem_3" />
+        </p>
+
+
+
         <p >
           <a target="_blank" href={'https://medium.com/uma-project/intro-to-blockchain-based-synthetic-derivatives-d3a61f3e6e79'}>
             <Trans i18nKey="redeem" />

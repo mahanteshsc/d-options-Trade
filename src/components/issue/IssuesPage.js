@@ -22,6 +22,19 @@ class IssuesPage extends React.Component {
   render() {
     return (
       <div>
+        <h1><Trans i18nKey="buy_tcad" /></h1>
+
+        <p>
+          <Trans i18nKey="purchase_1" />
+        </p>
+        <p>
+          <Trans i18nKey="purchase_2" />
+        </p>
+        <p>
+          <Trans i18nKey="purchase_3" />
+        </p>
+
+
             <p >
               <a target="_blank" href={'https://app.trusttoken.com/signup-or-signin'}>
                 <Trans i18nKey="buy_tcad" />
