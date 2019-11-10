@@ -1,5 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
+// import form-control-inline from '../../index.css'
+import "../../index.css";
 
 const SelectInput = ({
   name,
@@ -11,13 +13,15 @@ const SelectInput = ({
   options
 }) => {
   return (
-    <div className="form-group">
-      <label htmlFor={name}>{label}</label>
+    <div className="form-group form-control-inline">
+      {/*<label htmlFor={name}>{label}</label>*/}
       <div className="field">
         {/* Note, value is set here rather than on the option - docs: https://facebook.github.io/react/docs/forms.html */}
         <select
           name={name}
           value={value}
+          // autosize={true}
+          style={{width: `${(8*30) + 100}px`}}
           onChange={onChange}
           className="form-control"
         >

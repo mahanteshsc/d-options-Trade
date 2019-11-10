@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "../../index.css";
 
 const TextInput = ({ name, label, onChange, placeholder, value, error }) => {
   let wrapperClass = "form-group";
@@ -9,8 +10,8 @@ const TextInput = ({ name, label, onChange, placeholder, value, error }) => {
 
   return (
     <div className={wrapperClass}>
-      <label htmlFor={name}>{label}</label>
-      <div className="field">
+      {/*<label htmlFor={name}>{label}</label>*/}
+      <div className="field  form-control-inline">
         <input
           type="text"
           name={name}

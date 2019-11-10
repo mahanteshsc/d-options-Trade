@@ -5,6 +5,7 @@ import { bindActionCreators } from "redux";
 import { Redirect } from "react-router-dom";
 import Spinner from "../common/Spinner";
 import { toast } from "react-toastify";
+import { translate, Trans } from "react-i18next";
 
 class IssuesPage extends React.Component {
 
@@ -14,50 +15,23 @@ class IssuesPage extends React.Component {
       toggle: true
     };
   }
-  // state = {
-  //   redirectToAddCoursePage: false
-  // }
 
   componentDidMount() {
-    const { issues, trade, actions } = this.props;
   }
 
   render() {
     return (
       <div>
-        {/*{this.state.redirectToAddCoursePage && <Redirect to="/issue" />}*/}
-        <h2>Issues</h2>
-        {this.props.loading ? (
-          <Spinner />
-        ) : (
-          <div>
-            <button
-              style={{ marginBottom: 20 }}
-              className="btn btn-primary add-course"
-              // onClick={() => this.setState({ redirectToAddCoursePage: true })}
-            >
-              Add Issue
-            </button>
-
-            {/*<CourseList*/}
-              {/*onDeleteClick={this.handleDeleteIssue}*/}
-              {/*courses={this.props.courses}*/}
-            {/*/>*/}
-          </div>
-        )}
+            <p >
+              <a target="_blank" href={'https://app.trusttoken.com/signup-or-signin'}>
+                <Trans i18nKey="buy_tcad" />
+              </a>
+            </p>
       </div>
     );
   }
 
-  // handleDeleteCourse =  course => {
-  //   toast.success("Course deleted");
-    // try {
-    //   await this.props.actions.deleteCourse(course);
-    // } catch (error) {
-    //   toast.error("Delete failed. " + error.message, { autoClose: false });
-    // }
-  // };
 
 
 }
- export default IssuesPage;
+export default translate("translations")(IssuesPage);

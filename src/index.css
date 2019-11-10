@@ -6,3 +6,23 @@
 nav {
   padding: 20px 0 20px 0;
 }
+
+/*.tcad_img {*/
+  /*background-image: url('asset/tcad.png');*/
+/*}*/
+
+/*.bkg_img {*/
+  /*background-image: url('./asset/Background.png');*/
+/*}*/
+
+.form-control {
+  width: 50% !important;
+}
+
+
+.form-control-inline {
+  max-width: 30%
+  /*min-width: 10;*/
+  /*width: auto;*/
+  /*display: inline;*/
+}

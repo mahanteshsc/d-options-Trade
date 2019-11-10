@@ -1,27 +1,40 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ChangeLanguage from "../../change-language";
+import { translate, Trans } from "react-i18next";
+// import Logo from "../../asset/tcad.png";
+const path = "./public/tcad.png";
 
+const Icon = () => {
+  return(
+    <img src='' alt='Logo'/>
+  )
+}
 const Header = () => {
   const activeStyle = { color: "#F15B2A" };
   return (
     <nav>
+      <NavLink to="/about" activeStyle={activeStyle}>
+        <Trans i18nKey="about_us" />
+      </NavLink>
+      {" | "}
+      {/*<Icon className="tcad_img"  />*/}
+      {/*<img src={path} />*/}
       <NavLink to="/" activeStyle={activeStyle} exact>
-        Home
+        <Trans i18nKey="dashboard" />
       </NavLink>
       {" | "}
       <NavLink to="/issues" activeStyle={activeStyle}>
-        Issues
+        <Trans i18nKey="buy_tcad" />
       </NavLink>
         {" | "}
       <NavLink to="/trade" activeStyle={activeStyle}>
-        Trade
+        <Trans i18nKey="redeem" />
       </NavLink>
-      {" | "}
-      <NavLink to="/about" activeStyle={activeStyle}>
-        About
-      </NavLink>
+
+      <ChangeLanguage />
     </nav>
   );
 };
 
-export default Header;
+export default translate("translations")(Header);

@@ -7,10 +7,14 @@ import HomePage from "./home/HomePage";
 import AboutPage from "./about/AboutPage";
 import IssuesPage from "./issue/IssuesPage";
 import TradePage from "./trade/TradePage";
+import { translate, Trans } from "react-i18next";
+// import MetaMaskLoginButton from 'react-metamask-login-button';
+
 function App() {
   return (
         <div className="container-fluid">
-        <Header />
+          {/*<MetaMaskLoginButton />*/}
+          <Header />
         <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
@@ -24,4 +28,4 @@ function App() {
 
 }
 
-export default App;
+export default translate("translations")(App);
