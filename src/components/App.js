@@ -8,15 +8,17 @@ import AboutPage from "./about/AboutPage";
 import IssuesPage from "./issue/IssuesPage";
 import TradePage from "./trade/TradePage";
 import { translate, Trans } from "react-i18next";
+import MintPage from "./home/MintPage";
+// import Web3 from 'web3'
 // import MetaMaskLoginButton from 'react-metamask-login-button';
-
 function App() {
   return (
         <div className="container-fluid">
           {/*<MetaMaskLoginButton />*/}
           <Header />
         <Switch>
-        <Route exact path="/" component={HomePage} />
+          <Route exact path="/" component={MintPage} />
+        <Route  path="/home" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/issues" component={IssuesPage} />
         <Route path="/trade" component={TradePage} />

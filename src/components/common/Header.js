@@ -14,13 +14,17 @@ const Header = () => {
   const activeStyle = { color: "#F15B2A" };
   return (
     <nav>
+      <NavLink to="/" activeStyle={activeStyle} exact>
+        <Trans i18nKey="Mint" />
+      </NavLink>
+      {" | "}
       <NavLink to="/about" activeStyle={activeStyle}>
         <Trans i18nKey="about_us" />
       </NavLink>
       {" | "}
       {/*<Icon className="tcad_img"  />*/}
       {/*<img src={path} />*/}
-      <NavLink to="/" activeStyle={activeStyle} exact>
+      <NavLink to="/home" activeStyle={activeStyle} exact>
         <Trans i18nKey="dashboard" />
       </NavLink>
       {" | "}
