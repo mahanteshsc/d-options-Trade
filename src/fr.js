@@ -11,6 +11,7 @@ let fr = {
     title_trader: "Trader contrats d'options",
     dashboard: 'Émettre des options',
     want: 'Je veux',
+    stake_: 'I stake FR',
     buy: 'acheter',
     sell: 'vendre',
     call_option: "l'option d'achat",

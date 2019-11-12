@@ -7,13 +7,13 @@ import TextInput from "../common/TextInput";
 import SelectInput from '../common/SelectInput';
 import { toast } from "react-toastify";
 import {handleError, handleResponse} from "../common/apiUtils";
- import {
-   CONTRACR_ADDRESS_XESG,
-   CONTRACR_ADDRESS_poETH,
-   CONTRACR_ADDRESS_coETH,
-   CONTRACT_TokenizedDerivativeCreator_ABI,
-   CONTRACT_TokenizedDerivative_ABI
- } from '../common/config';
+ // import {
+ //   CONTRACR_ADDRESS_XESG,
+ //   CONTRACR_ADDRESS_poETH,
+ //   CONTRACR_ADDRESS_coETH,
+ //   CONTRACT_TokenizedDerivativeCreator_ABI,
+ //   CONTRACT_TokenizedDerivative_ABI
+ // } from '../common/config';
 let state = {derivatives:""};
 
 const handleChange= (event)=> {
@@ -27,6 +27,12 @@ const handleChange= (event)=> {
   // }));
 }
 
+// export async function sendData(){
+// const tokenizedDerivative = await TokenizedDerivative.at('0xDE2B97d8921067c40971F54475c1bC103A4bD5fa')
+// await tokenizedDerivative.deposit(web3.utils.toWei("100"), { value: web3.utils.toWei("100") })
+// await tokenizedDerivative.createTokens(web3.utils.toWei("1000"), web3.utils.toWei("1"), { value: web3.utils.toWei("1000") })
+//
+// }
 
 const baseUrl = process.env.API_URL + "/authors/";
 
@@ -66,7 +72,7 @@ const MintPage = (security, saving = false) => (
 
     <form onSubmit={handleSave}>
 
-      <Trans i18nKey="wantToDeposit" />
+      <Trans i18nKey="stake_" />
       <TextInput
         name="amtId"
         label="Amount"

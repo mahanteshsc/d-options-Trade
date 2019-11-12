@@ -11,6 +11,7 @@ let en = {
     title_trader: "Futures Trader",
     dashboard: 'Issue Options',
     want: 'I want to',
+    stake_: 'I stake',
     buy: 'buy',
     sell: 'sell',
     call_option: 'call option',
