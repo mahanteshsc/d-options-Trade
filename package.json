@@ -15,7 +15,7 @@
   "license": "None",
   "dependencies": {
     "babel-polyfill": "6.8.0",
-    "bootstrap": "3.3.6",
+    "bootstrap": "3.4.1",
     "ethers": "^4.0.39",
     "i18next": "10.4.1",
     "i18next-browser-languagedetector": "2.1.0",
