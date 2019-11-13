@@ -20,7 +20,7 @@
     "i18next": "10.4.1",
     "i18next-browser-languagedetector": "2.1.0",
     "i18next-xhr-backend": "1.5.1",
-    "jquery": "2.2.3",
+    "jquery": "3.4.0",
     "json-loader": "^0.5.7",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
